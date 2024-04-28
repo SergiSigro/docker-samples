@@ -8,8 +8,8 @@ RUN rm -rf /usr/share/nginx/html/*
 COPY index.html /usr/share/nginx/html
 COPY pong.js /usr/share/nginx/html
 
-# Exponer el puerto 8080
-EXPOSE 8080
+# Exponer el puerto 80
+EXPOSE 80
 
 # Iniciar Nginx y mantenerlo en ejecución
 CMD ["nginx", "-g", "daemon off;"]
